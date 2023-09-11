@@ -27,7 +27,7 @@ const SearchBooks = () => {
       const response = await fetch(
         `https://www.googleapis.com/books/v1/volumes?q=${searchInput}`
       );
-
+      console.log(response)
       if (!response.ok) {
         throw new Error('Something went wrong!');
       }
